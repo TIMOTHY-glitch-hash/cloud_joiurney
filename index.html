@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timothy's Cloud Server</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial;min-height:100vh;overflow:hidden}
+.bg{
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    background-image:url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1920&q=80');
+    background-size:cover;
+    background-position:center;
+    filter:brightness(0.4);
+}
+.overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(180deg,rgba(10,10,30,0.3),rgba(10,10,30,0.7))}
+.scan{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(100,50,255,0.8),transparent);animation:scan 4s linear infinite;z-index:50}
+@keyframes scan{0%{top:0;opacity:1}100%{top:100%;opacity:0}}
+.content{position:fixed;top:0;left:0;right:0;bottom:0;display:flex;justify-content:center;align-items:center;z-index:100}
+.card{background:rgba(0,0,0,0.4);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:50px 60px;text-align:center;max-width:650px;box-shadow:0 0 60px rgba(100,50,255,0.3)}
+.flag{font-size:3em;margin-bottom:10px}
+h1{font-size:2.2em;font-weight:900;background:linear-gradient(135deg,#e94560,#7b2ff7,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+.sub{color:rgba(255,255,255,0.5);font-size:0.85em;letter-spacing:4px;text-transform:uppercase;margin-bottom:20px}
+.divider{width:60px;height:2px;background:linear-gradient(90deg,#e94560,#7b2ff7);margin:0 auto 20px;border-radius:2px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:25px}
+.stat{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:15px}
+.stat-icon{font-size:1.5em}
+.stat-label{color:rgba(255,255,255,0.35);font-size:0.7em;text-transform:uppercase;letter-spacing:2px;margin:4px 0}
+.stat-value{color:white;font-size:0.9em;font-weight:bold}
+.badge{display:inline-block;background:linear-gradient(135deg,#e94560,#7b2ff7);color:white;padding:12px 30px;border-radius:30px;font-weight:bold;box-shadow:0 0 30px rgba(233,69,96,0.4)}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="overlay"></div>
+<div class="scan"></div>
+<div class="content">
+<div class="card">
+<div class="flag">🇺🇬</div>
+<h1>TIMOTHY'S CLOUD SERVER</h1>
+<p class="sub">Penthouse View • Kampala, Uganda</p>
+<div class="divider"></div>
+<div class="stats">
+<div class="stat"><div class="stat-icon">☁️</div><div class="stat-label">Hosted On</div><div class="stat-value">AWS EC2</div></div>
+<div class="stat"><div class="stat-icon">⚡</div><div class="stat-label">Web Server</div><div class="stat-value">Nginx</div></div>
+<div class="stat"><div class="stat-icon">🌍</div><div class="stat-label">Location</div><div class="stat-value">Kampala, UG</div></div>
+<div class="stat"><div class="stat-icon">🔐</div><div class="stat-label">Security</div><div class="stat-value">SSL Ready</div></div>
+</div>
+<div class="badge">🚀 Cloud Engineer in Training</div>
+</div>
+</div>
+</body>
+</html>
